@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="add_plan.css">
+        <title>Add Plan</title>
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-9  pb-4">
+                    <h3 class="text-center">Create Plan</h3>
+                    <form method="POST">
+                        <div class="form-group">
+                            <label for="p_name"></label>
+                            <input type="text" name="p_name" required="" placeholder="Enter Plan Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="p_speed"></label>
+                            <input type="text" name="p_speed" required="" placeholder="Enter Speed Limits" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="p_cost"></label>
+                            <input type="text" name="p_cost" required="" placeholder="Enter Cost" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="p_duration"></label>
+                            <input type="text" name="p_duration" required="" placeholder="Enter Duration in Days" class="form-control">
+                        </div>
+                        <div class="create-button">
+                            <button type="submit" class="btn btn-success">Create</button>
+                        </div>
+                    </form>
+                </div>
+                    
+            </div>
+        </div>
+    </body>
+</html>
