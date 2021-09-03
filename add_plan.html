@@ -12,34 +12,113 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Admin Dashboard</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+                <form class="d-flex">
+                  <button class="btn btn-outline-success" type="submit">Logout</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+
             <div class="row">
-                <div class="col-sm-9  pb-4">
-                    <h3 class="text-center">Create Plan</h3>
-                    <form method="POST">
-                        <div class="form-group">
-                            <label for="p_name"></label>
-                            <input type="text" name="p_name" required="" placeholder="Enter Plan Name" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="p_speed"></label>
-                            <input type="text" name="p_speed" required="" placeholder="Enter Speed Limits" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="p_cost"></label>
-                            <input type="text" name="p_cost" required="" placeholder="Enter Cost" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="p_duration"></label>
-                            <input type="text" name="p_duration" required="" placeholder="Enter Duration in Days" class="form-control">
-                        </div>
-                        <div class="create-button">
-                            <button type="submit" class="btn btn-success">Create</button>
-                        </div>
-                    </form>
+                <div class="col">
+                    <div class="v-nav">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <div class="btn-group">
+                                    <button id="b1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Plans
+                                    </button>
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="add_plan.html">Add Plans</a></li>
+                                        <li><a class="dropdown-item" href="">Delete Plans</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <br>
+                
+                            <li class="nav-item">
+                                <div class="btn-group ">
+                                    <button id="b1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Employees
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="add_employee.html">Add Employee</a></li>
+                                        <li><a class="dropdown-item" href="view_emplyee.html">View Employee</a></li>
+                                        <li><a class="dropdown-item" href="#">Edit Employee</a></li>
+                                        <li><a class="dropdown-item" href="#">Delete Employee</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <br>
+                
+                            <li class="nav-item">
+                                <div class="btn-group">
+                                    <button id="b1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Customers
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="add_customer.html">Add Customers</a></li>
+                                        <li><a class="dropdown-item" href="#">View Customers</a></li>
+                                        <li><a class="dropdown-item" href="#">Edit Customers</a></li>
+                                        <li><a class="dropdown-item" href="#">Delete Customers</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                
+                            <br>
+                            <li class="nav-item">
+                                <div class="btn-group">
+                                    <button id="b1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Complaints
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                      <li><a class="dropdown-item" href="add_complaint.html">Add Complaints</a></li>
+                                      <li><a class="dropdown-item" href="#">View Complaints</a></li>
+                                      <li><a class="dropdown-item" href="#">Edit Complaints</a></li>
+                                      <li><a class="dropdown-item" href="#">Delete Complaints</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Create Plan</h3> <br>
+                    <div class="form">
+                        <form method="POST">
+                            <div class="form-group">
+                                <label for="p_name">Plan Name</label>
+                                <input type="text" name="p_name" required="" placeholder="Enter Plan Name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="p_speed">Speed Limits</label>
+                                <input type="text" name="p_speed" required="" placeholder="Enter Speed Limits" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="p_cost">Cost</label>
+                                <input type="text" name="p_cost" required="" placeholder="Enter Cost" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="p_duration">Duration</label>
+                                <input type="text" name="p_duration" required="" placeholder="Enter Duration in Days" class="form-control">
+                            </div>
+                            <div class="create-button">
+                                <button type="submit" class="btn btn-success">Create</button>
+                            </div>
+                        </form>
+                    </div>
+                    
                 </div>
                     
-            </div>
-        </div>
+            
     </body>
 </html>

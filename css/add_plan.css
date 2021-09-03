@@ -3,5 +3,37 @@
 }
 
 .row {
-  background-color: #34b4eb;
+  background-color: #a7c1cc;
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+.v-nav{
+  background-color: rgb(87, 87, 87);
+  width: 30%;
+  height: 100vh;
+}
+
+#b1{
+  background-color: blueviolet;
+  width: 5cm;
+  text-align: left;
+  padding-top: 0.5cm;
+  padding-bottom: 0.5cm;
+  
+}
+.form{
+  margin-left: -5cm;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 15cm;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
