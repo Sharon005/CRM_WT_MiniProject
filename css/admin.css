@@ -18,3 +18,20 @@
     padding-bottom: 0.6cm;
     
 }
+
+@keyframes fadeIn {
+    from{
+
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+    
+}
+.fade-in{
+     
+    animation: fadeIn 6s;
+
+}
