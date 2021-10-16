@@ -16,6 +16,9 @@
     </head>
     <body>
         <div class="fade-in" id="mydiv">
+
+            <button id="mybtn">Hide</button>
+            
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">Admin Dashboard</a>
@@ -236,7 +239,21 @@
                     });
                 </script>
     
-                
+                <script>
+                    document.getElementById("mybtn").addEventListener("click", function() {
+
+                    var mybox = document.getElementById("mydiv");
+                    if (mybox.style.display == "none") {
+
+                    mybox.style.display = "block";
+                    } else {
+                    mybox.style.display = "none";
+
+                    }
+
+                    })
+                </script>
+      
         </div>      
     </body>
 </html>
