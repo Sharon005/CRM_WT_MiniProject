@@ -162,7 +162,24 @@
 
                     });
                 </script>
-                    
+                <?php include ('../includes/app.php');?>
+                    <?php include('../includes/footer.php'); ?>
+<?php
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+	$p_name = mysqli_real_escape_string($con,$_POST['p_name']);
+	$p_speed = mysqli_real_escape_string($con,$_POST['p_speed']);
+	$p_cost = mysqli_real_escape_string($con,$_POST['p_cost']);
+	$p_duration = mysqli_real_escape_string($con,$_POST['p_duration']);
+	$sql = mysqli_query($con,"INSERT INTO plan(p_name,p_speed,p_cost,p_duration)VALUES('$p_name','$p_speed','$p_cost','$p_duration')");
+	if($sql){
+		echo "<h2 style='margin:3% 0% 0% 15%;color:green;'>Plan Successfully Added...</h2>";
+	}else{
+		echo "Error: ".mysqli_error($con);
+		echo "<script type='text/javascript'>alert('Something Wrong');</script>";
+	}
+}
+
+?>
             
     </body>
 </html>

@@ -278,7 +278,28 @@
 
                 })
             </script>
-              
-            
+              <?php include ('../includes/app.php');?>
+            <?php include('../includes/footer.php'); ?>
+<?php
+if($_SERVER['REQUEST_METHOD']=='POST'){
+	$c_name = mysqli_real_escape_string($con,$_POST['c_name']);
+	$c_contact = mysqli_real_escape_string($con,$_POST['c_contact']);
+	$c_email = mysqli_real_escape_string($con,$_POST['c_email']);
+	$c_age = mysqli_real_escape_string($con,$_POST['c_age']);
+	$gender = $_POST['gender'];
+	$business = $_POST['c_business'];
+	$type = $_POST['c_type'];
+	$c_region = mysqli_real_escape_string($con,$_POST['c_region']);
+	$c_plan = $_POST['c_plan'];
+	$sql = mysqli_query($con,"INSERT INTO customer(c_name,c_contact,c_email,c_age,c_gender,c_business,c_type,c_region,c_plan)
+		VALUES('$c_name','$c_contact','$c_email','$c_age','$gender','$business','$type','$c_region','$c_plan')");
+	if($sql){
+		echo "<h3 style='color:green;'>Customer Added..</h3>";
+	}else{
+		echo "<h3 style='color:red;'>Failed !!..</h3>";
+	}
+	
+}
+?>
     </body>
 </html>
