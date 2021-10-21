@@ -1,0 +1,56 @@
+.create-button {
+  margin-top: 25px;
+}
+
+.row {
+  background-color: #a7c1cc;
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+.v-nav{
+  background-color: rgb(87, 87, 87);
+  width: 30%;
+  height: 100vh;
+}
+
+#b1{
+  background-color: blueviolet;
+  width: 5cm;
+  text-align: left;
+  padding-top: 0.5cm;
+  padding-bottom: 0.5cm;
+  
+}
+.form{
+  margin-left: -5cm;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 15cm;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@keyframes fadeIn {
+  from{
+
+      opacity: 0;
+  }
+
+  to{
+      opacity: 1;
+  }
+  
+}
+.fade-in{
+   
+  animation: fadeIn 6s;
+
+}

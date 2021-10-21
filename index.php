@@ -33,8 +33,8 @@
                     <i class="fas fa-sign-in-alt"></i>Login</a>
                 <div class="dropdown">
                     <ul>
-                        <li><a href="login_page.html">Admin Login</a></li>
-                        <li><a href="login_page.html">Employee Login</a></li>
+                        <li><a href="login_page.php">Admin Login</a></li>
+                        <li><a href="login_page.php">Employee Login</a></li>
                     </ul>
                 </div>
             </li>

@@ -17,10 +17,6 @@
     
 </head>
 <body>
-  <div class="fade-in" id="mydiv"> 
-
-    <button id="mybtn">Hide</button>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Admin Dashboard</a>
@@ -44,8 +40,10 @@
                   </button>
                   <span class="visually-hidden">Toggle Dropdown</span>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="add_plan.html">Add Plans</a></li>
-                      <li><a class="dropdown-item" href="">Delete Plans</a></li>
+                      <li><a class="dropdown-item" href="add_plan.php">Add Plans</a></li>
+                      <li><a class="dropdown-item" href="plan_edit.php">Edit Plans</a></li>
+                      <li><a class="dropdown-item" href="plan_view.php">View Plans</a></li>
+                      <li><a class="dropdown-item" href="plan_delete.php">Delete Plans</a></li>
                   </ul>
               </div>
           </li>
@@ -57,10 +55,10 @@
                     Employees
                   </button>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="add_employee.html">Add Employee</a></li>
-                      <li><a class="dropdown-item" href="view_emplyee.html">View Employee</a></li>
-                      <li><a class="dropdown-item" href="#">Edit Employee</a></li>
-                      <li><a class="dropdown-item" href="#">Delete Employee</a></li>
+                      <li><a class="dropdown-item" href="add_employee.php">Add Employee</a></li>
+                      <li><a class="dropdown-item" href="viewemp.php">View Employee</a></li>
+                      <li><a class="dropdown-item" href="editemp.php">Edit Employee</a></li>
+                      <li><a class="dropdown-item" href="delete_emp.php">Delete Employee</a></li>
                   </ul>
               </div>
           </li>
@@ -72,10 +70,10 @@
                     Customers
                   </button>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="add_customer.html">Add Customers</a></li>
-                      <li><a class="dropdown-item" href="#">View Customers</a></li>
-                      <li><a class="dropdown-item" href="#">Edit Customers</a></li>
-                      <li><a class="dropdown-item" href="#">Delete Customers</a></li>
+                      <li><a class="dropdown-item" href="add_customer.php">Add Customers</a></li>
+                      <li><a class="dropdown-item" href="view_customer.php">View Customers</a></li>
+                      <li><a class="dropdown-item" href="edit_customer.php">Edit Customers</a></li>
+                      <li><a class="dropdown-item" href="delete_customer.php">Delete Customers</a></li>
                   </ul>
               </div>
           </li>
@@ -87,10 +85,9 @@
                     Complaints
                   </button>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="add_complaint.html">Add Complaints</a></li>
-                    <li><a class="dropdown-item" href="#">View Complaints</a></li>
-                    <li><a class="dropdown-item" href="#">Edit Complaints</a></li>
-                    <li><a class="dropdown-item" href="#">Delete Complaints</a></li>
+                    <li><a class="dropdown-item" href="add_complaint.php">Add Complaints</a></li>
+                    <li><a class="dropdown-item" href="view_complaint.php">View Complaints</a></li>
+                    <li><a class="dropdown-item" href="solve_complaint.php">Solve Complaints</a></li>
                   </ul>
               </div>
           </li>
