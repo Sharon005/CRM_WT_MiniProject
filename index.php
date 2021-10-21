@@ -1,74 +1,94 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CRm</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style type="text/css">
-    .col-sm-3{background-color: #DADCDC;width: 100%;height: 650px;padding: 20px 0px 20px 30px; text-align: center;}
-    .col-sm-9 img{width: 100%;height: auto;margin: 0px;padding: 0px; border-radius: 5px;}
-    .col-sm-9 p{font-family: verdana;padding: 10px;}
-    .fa{font-size: 40px;}
-        .col-sm-3 ul li a{color: #2D7495; padding-top: 5%;font-size: 25px;}
-    .col-sm-3 ul li a:hover{background-color: #EFEEE9;color: red;}
-    #admin{margin-top: 5%;padding: 10px;width: 100%;}
-    .row .col-sm-7{background-image: #2D7495;}
-      h3{background-image: linear-gradient(to right, #2D7495,black,#2D7495);color: white;text-align: center;padding: 10px 0px 10px 0px;font-size: 40px; border-left: 20px solid black;}
-      #about{color:#2D7495;}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-  </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    
+    <link rel="stylesheet" href="css/home.css">
+
 </head>
-<body data-spy="scroll" data-target=".nav" data-offset="50">
-<div class="container-fluid">
-<div class="row">
-  <div class="col-sm-3">
-  <ul class="nav flex-column">
-    <li class="nav-item">
-      <span class="fa fa-home"></span>
-      <a class="nav-link" href="#">HOME</a>
-    </li>
-    <li class="nav-item">
-      <span class="fa fa-info"></span>
-      <a class="nav-link" href="#">ABOUT</a>
-    </li>
-    <li class="nav-item">
-      <span class="fa fa-user"></span>
-      <a class="nav-link" href="#">ADMIN</a>
-    </li>
-  </ul>
-</div>
-<div class="col-sm-9">
-  <div class="row" style="background-color: #2D7495;padding:10px 0px 10px 0px;">
-    <div class="col-sm-5">
-      <div id="admin">
-    <h3>Admin Login</h3>
-    <form method="POST" action="login.php">
-      <div class="form-group">
-        <input type="text" name="email" placeholder="Enter Email.." required="" class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="password"></label>
-        <input type="password" name="password" placeholder="Password" required="" class="form-control">
-      </div>
-      <button type="submit" class="btn btn-dark">Login</button>
-    </form>
-  </div>
+<body>
+    <div class="header">
+        
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+            
+            
+            <li style="margin-left: 760px;"><a class="" href="#">
+                    <i class="fas fa-sign-in-alt"></i>Login</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="login_page.php">Admin Login</a></li>
+                        <li><a href="login_page.php">Employee Login</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    
     </div>
-    <div class="col-sm-7">
-      <img src="images/now.jpg">
     </div>
-  </div>
-  <div id="about">
-    <h3 class="text-center">CRM For Internet Service Provider</h3>
-    <p>HighSpeedInternet.com simplifies the search for the best Internet Service Provider (ISP) for your home or business. Enter your zip code and we’ll show you which ISPs are available in your area. From there you can easily compare speeds, features, customer reviews, expert ratings, and prices to find the ISP that works best for you. With over 1,200 providers in our database, you’re sure to find a good match.Below you’ll find national internet service statistics, FAQs, and general provider information to help you in your search. Enter your zip code to get information specific to your area. HighSpeedInternet.com simplifies the search for the best Internet Service Provider (ISP) for your home or business. Enter your zip code and we’ll show you which ISPs are available in your area. From there you can easily compare speeds, features, customer reviews, expert ratings, and prices to find the ISP that works best for you. With over 1,200 providers in our database, you’re sure to find a good match.Below you’ll find national internet service statistics, FAQs, and general provider information to help you in your</p>
-  </div>
-</div>
-</div></div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/crm-tools.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/PerfectView-What-is-CRM.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/download.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+    <footer class="footer">        
+    
+        <div class="socials">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <p class="copyright">&copy 2021 All Rights Reserved</p>
+    </footer>
+
+
+    
 </body>
 </html>

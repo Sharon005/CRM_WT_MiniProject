@@ -10,7 +10,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
   	if ($result -> num_rows) {
 	    $_SESSION['email'] = $email;
 	  	$result -> free_result();
-	    header("location:pages/home.php");
+	    header("location:pages/admin.php");
 	}else{
 		echo 'Try Again';
 	}

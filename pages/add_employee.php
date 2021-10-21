@@ -117,10 +117,23 @@
                                     <input type="text" name="p_cost" required="" placeholder="Enter Email Id" class="form-control" id="form_email">
                                     <span class="error_form" id="email_error_message"></span>
                                 </div>
+
                                 <div class="form-group">
-                                    <label for="p_duration">Region</label>
-                                    <input type="text" name="p_duration" required="" placeholder="Enter Region" class="form-control" id="region_name">
-                                    <span class="error_form" id="region_name_error_message"></span>
+                                    <label>Choose State</label>
+                                    <select class="form-control" onchange="myfun(this.value)">
+                                        <option> Select State </option>
+                                        <option> Rajasthan </option>
+                                        <option> Madhya Pradesh </option>
+                                        <option> Maharashtra </option>
+                                        <option> Uttar Pradesh </option>
+                                        <option> Gujarat </option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Choose City</label>
+                                    <select class="form-control" id="city">
+                                        <option> Select City  </option>
+                                    </select>
                                 </div>
                                 <div class="create-button">
                                     <button type="submit" class="btn btn-success">Add Employee</button>
@@ -131,7 +144,7 @@
                     </div>
                         
                 </div>
-    
+
                 <script type="text/javascript">
                     $(function(){
                         $('#fname_error_message').hide();
@@ -252,6 +265,23 @@
                     }
 
                     })
+                </script>
+
+                <script type="text/javascript">
+                    function myfun(data)
+                    {
+                        var req = new XMLHttpRequest();
+                        req.open("GET","http://localhost/CRM/pages/response.php?datavalue="+data,true);
+                        req.send();
+
+                        req.onreadystatechange=function(){
+
+                            if(req.readyState==4 && req.status==200){
+                                document.getElementById('city').innerHTML = req.responseText;
+                            }
+
+                        }
+                    }
                 </script>
       
         </div>      
