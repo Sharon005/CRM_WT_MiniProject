@@ -105,9 +105,6 @@
                 </table>
             </div>
         </div>
-        <?php include ('../includes/app.php');?>
-        <?php include('../includes/footer.php'); ?>
-
 
 <?php
 if($_SERVER["REQUEST_METHOD"]=="POST"){
