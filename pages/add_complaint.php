@@ -116,6 +116,27 @@
                 </div>
                 
             </div>
-        </div>
+        </div> 
+        
+        <?php include ('../includes/app.php');?>
+        <?php include('../includes/footer.php'); ?>
+        <?php
+        if($_SERVER["REQUEST_METHOD"]=="POST"){
+            $cm_id = $_POST['cm_id'];
+            $cm_name = mysqli_real_escape_string($con,$_POST['cm_name']);
+            $cm_date = mysqli_real_escape_string($con,$_POST['cm_date']);
+            $solution = "Unsolverd";
+            $sql = mysqli_query($con,"INSERT INTO complaint(customer_id,complaint,com_date,com_solution)VALUES('$cm_id','$cm_name','$cm_date','$solution')");
+            if($sql){
+                echo "<h2 style='margin:3% 0% 0% 15%;color:green;'>Complaint Successfully Added...</h2>";
+            }else{
+                echo "Error: ".mysqli_error($con);
+                echo "<script type='text/javascript'>alert('Something Wrong');</script>";
+            }
+        }
+
+        ?>
+
+
     </body>
 </html>
