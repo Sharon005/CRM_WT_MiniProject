@@ -38,19 +38,3 @@ textarea {
   border-radius: 4px;
 }
 
-@keyframes fadeIn {
-  from{
-
-      opacity: 0;
-  }
-
-  to{
-      opacity: 1;
-  }
-  
-}
-.fade-in{
-   
-  animation: fadeIn 6s;
-
-}

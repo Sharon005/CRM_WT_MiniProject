@@ -26,64 +26,9 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
-    <style>
-      .create-button {
-        margin-top: 25px;
-      }
-
-      .row {
-        background-color: #a7c1cc;
-      }
-
-      * {
-        margin: 0%;
-        padding: 0%;
-      }
-
-      .v-nav {
-        background-color: rgb(87, 87, 87);
-        width: 30%;
-        height: 100vh;
-      }
-
-      #b1 {
-        background-color: blueviolet;
-        width: 5cm;
-        text-align: left;
-        padding-top: 0.5cm;
-        padding-bottom: 0.5cm;
-      }
-      .form {
-        margin-left: -5cm;
-      }
-
-      input[type="text"],
-      select,
-      textarea {
-        width: 15cm;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-
-        to {
-          opacity: 1;
-        }
-      }
-      .fade-in {
-        animation: fadeIn 6s;
-      }
-    </style>
+    
   </head>
   <body>
-    <div class="fade-in" id="mydiv">
-      <button id="mybtn">Hide</button>
-
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Admin Dashboard</a>
@@ -111,128 +56,70 @@
         <div class="col">
           <div class="v-nav">
             <ul class="nav flex-column">
-              <li class="nav-item">
-                <div class="btn-group">
-                  <button
-                    id="b1"
-                    type="button"
-                    class="btn btn-secondary dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+          <li class="nav-item">
+              <div class="btn-group">
+                  <button id="b1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     Plans
                   </button>
                   <span class="visually-hidden">Toggle Dropdown</span>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li>
-                      <a class="dropdown-item" href="add_plan.html"
-                        >Add Plans</a
-                      >
-                    </li>
-                    <li><a class="dropdown-item" href="">Delete Plans</a></li>
+                      <li><a class="dropdown-item" href="add_plan.php">Add Plans</a></li>
+                      <li><a class="dropdown-item" href="plan_edit.php">Edit Plans</a></li>
+                      <li><a class="dropdown-item" href="plan_view.php">View Plans</a></li>
+                      <li><a class="dropdown-item" href="plan_delete.php">Delete Plans</a></li>
                   </ul>
-                </div>
-              </li>
-              <br />
+              </div>
+          </li>
+          <br>
 
-              <li class="nav-item">
-                <div class="btn-group">
-                  <button
-                    id="b1"
-                    type="button"
-                    class="btn btn-secondary dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+          <li class="nav-item">
+              <div class="btn-group ">
+                  <button id="b1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     Employees
                   </button>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li>
-                      <a class="dropdown-item" href="add_employee.html"
-                        >Add Employee</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="view_emplyee.html"
-                        >View Employee</a
-                      >
-                    </li>
-                    <li><a class="dropdown-item" href="#">Edit Employee</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Delete Employee</a>
-                    </li>
+                      <li><a class="dropdown-item" href="add_employee.php">Add Employee</a></li>
+                      <li><a class="dropdown-item" href="viewemp.php">View Employee</a></li>
+                      <li><a class="dropdown-item" href="editemp.php">Edit Employee</a></li>
+                      <li><a class="dropdown-item" href="delete_emp.php">Delete Employee</a></li>
                   </ul>
-                </div>
-              </li>
-              <br />
+              </div>
+          </li>
+          <br>
 
-              <li class="nav-item">
-                <div class="btn-group">
-                  <button
-                    id="b1"
-                    type="button"
-                    class="btn btn-secondary dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+          <li class="nav-item">
+              <div class="btn-group">
+                  <button id="b1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     Customers
                   </button>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li>
-                      <a class="dropdown-item" href="add_customer.html"
-                        >Add Customers</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">View Customers</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Edit Customers</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Delete Customers</a>
-                    </li>
+                      <li><a class="dropdown-item" href="add_customer.php">Add Customers</a></li>
+                      <li><a class="dropdown-item" href="view_customer.php">View Customers</a></li>
+                      <li><a class="dropdown-item" href="edit_customer.php">Edit Customers</a></li>
+                      <li><a class="dropdown-item" href="delete_customer.php">Delete Customers</a></li>
                   </ul>
-                </div>
-<<<<<<< HEAD:pages/add_employee.html
-              </li>
+              </div>
+          </li>
 
-              <br />
-              <li class="nav-item">
-                <div class="btn-group">
-                  <button
-                    id="b1"
-                    type="button"
-                    class="btn btn-secondary dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+          <br>
+          <li class="nav-item">
+              <div class="btn-group">
+                  <button id="b1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     Complaints
                   </button>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li>
-                      <a class="dropdown-item" href="add_complaint.html"
-                        >Add Complaints</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">View Complaints</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Edit Complaints</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Delete Complaints</a>
-                    </li>
+                    <li><a class="dropdown-item" href="add_complaint.php">Add Complaints</a></li>
+                    <li><a class="dropdown-item" href="view_complaint.php">View Complaints</a></li>
+                    <li><a class="dropdown-item" href="solve_complaint.php">Solve Complaints</a></li>
                   </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
+              </div>
+          </li>
+        </ul>
+  </div>
         </div>
 
         <div class="col">
-          <h3>Create Plan</h3>
+          <h3>Create Employee</h3>
           <br />
           <div class="form">
             <form id="add_employee_form" method="POST">
@@ -273,17 +160,22 @@
                 <span class="error_form" id="email_error_message"></span>
               </div>
               <div class="form-group">
-                <label for="p_duration">Region</label>
-                <input
-                  type="text"
-                  name="p_duration"
-                  required=""
-                  placeholder="Enter Region"
-                  class="form-control"
-                  id="region_name"
-                />
-                <span class="error_form" id="region_name_error_message"></span>
-              </div>
+                <label>Choose State</label>
+                <select style="width: 15cm" class="form-control" onchange="myfun(this.value)">
+                    <option> Select State </option>
+                    <option> Rajasthan </option>
+                    <option> Madhya Pradesh </option>
+                    <option> Maharashtra </option>
+                    <option> Uttar Pradesh </option>
+                    <option> Gujarat </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Choose City</label>
+                <select style="width: 15cm" class="form-control" id="city">
+                    <option> Select City  </option>
+                </select>
+            </div>
               <div class="create-button">
                 <button type="submit" class="btn btn-success">
                   Add Employee
@@ -379,232 +271,6 @@
               error_rname = true;
             }
           }
-=======
-            </nav>
-    
-                <div class="row">
-                    <div class="col">
-                    <div class="v-nav">
-      <ul class="nav flex-column">
-          <li class="nav-item">
-              <div class="btn-group">
-                  <button id="b1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Plans
-                  </button>
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="add_plan.php">Add Plans</a></li>
-                      <li><a class="dropdown-item" href="plan_edit.php">Edit Plans</a></li>
-                      <li><a class="dropdown-item" href="plan_view.php">View Plans</a></li>
-                      <li><a class="dropdown-item" href="plan_delete.php">Delete Plans</a></li>
-                  </ul>
-              </div>
-          </li>
-          <br>
-
-          <li class="nav-item">
-              <div class="btn-group ">
-                  <button id="b1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Employees
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="add_employee.php">Add Employee</a></li>
-                      <li><a class="dropdown-item" href="viewemp.php">View Employee</a></li>
-                      <li><a class="dropdown-item" href="editemp.php">Edit Employee</a></li>
-                      <li><a class="dropdown-item" href="delete_emp.php">Delete Employee</a></li>
-                  </ul>
-              </div>
-          </li>
-          <br>
-
-          <li class="nav-item">
-              <div class="btn-group">
-                  <button id="b1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Customers
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="add_customer.php">Add Customers</a></li>
-                      <li><a class="dropdown-item" href="view_customer.php">View Customers</a></li>
-                      <li><a class="dropdown-item" href="edit_customer.php">Edit Customers</a></li>
-                      <li><a class="dropdown-item" href="delete_customer.php">Delete Customers</a></li>
-                  </ul>
-              </div>
-          </li>
-
-          <br>
-          <li class="nav-item">
-              <div class="btn-group">
-                  <button id="b1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Complaints
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="add_complaint.php">Add Complaints</a></li>
-                    <li><a class="dropdown-item" href="view_complaint.php">View Complaints</a></li>
-                    <li><a class="dropdown-item" href="solve_complaint.php">Solve Complaints</a></li>
-                  </ul>
-              </div>
-          </li>
-        </ul>
-  </div>
-                    </div>
-    
-                    <div class="col">
-                        <h3>Create Plan</h3> <br>
-                        <div class="form">
-                            <form id = "add_employee_form" method="POST">
-                                <div class="form-group">
-                                    <label for="p_name">First Name</label>
-                                    <input type="text" name="p_name" required="" placeholder="Enter First Name" class="form-control" id="form_fname">
-                                    <span class="error_form" id="fname_error_message"></span>
-                                </div>
-                                <div class="form-group">
-                                    <label for="p_speed">Last Name</label>
-                                    <input type="text" name="p_speed" required="" placeholder="Enter Last Name" class="form-control" id="form_lname">
-                                    <span class="error_form" id="lname_error_message"></span>
-                                </div>
-                                <div class="form-group">
-                                    <label for="p_cost">Email</label>
-                                    <input type="text" name="p_cost" required="" placeholder="Enter Email Id" class="form-control" id="form_email">
-                                    <span class="error_form" id="email_error_message"></span>
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Choose State</label>
-                                    <select class="form-control" onchange="myfun(this.value)">
-                                        <option> Select State </option>
-                                        <option> Rajasthan </option>
-                                        <option> Madhya Pradesh </option>
-                                        <option> Maharashtra </option>
-                                        <option> Uttar Pradesh </option>
-                                        <option> Gujarat </option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label>Choose City</label>
-                                    <select class="form-control" id="city">
-                                        <option> Select City  </option>
-                                    </select>
-                                </div>
-                                <div class="create-button">
-                                    <button type="submit" class="btn btn-success">Add Employee</button>
-                                </div>
-                            </form>
-                        </div>
-                        
-                    </div>
-                        
-                </div>
-
-                <script type="text/javascript">
-                    $(function(){
-                        $('#fname_error_message').hide();
-                        $('#lname_error_message').hide();
-                        $('#email_error_message').hide();
-                        $('#region_name_error_message').hide();
-    
-                        var error_fname = false;
-                        var error_lname = false;
-                        var error_email = false;
-                        var error_rname = false;
-    
-                        $("#form_fname").focusout(function(){
-                            check_fName();
-                        });
-    
-                        $("#form_lname").focusout(function(){
-                            check_lName();
-                        });
-    
-                        $("#form_email").focusout(function(){
-                            check_email();
-                        });
-    
-                        $("#region_name").focusout(function(){
-                            check_rName();
-                        });
-    
-                        function check_fName(){
-                            var pattern = /^[a-zA-Z]*$/;
-                            var fname = $("#form_fname").val()
-                            if (pattern.test(fname) && fname!==''){
-                                $('#fname_error_message').hide();
-                                $("#form_fname").css("border-bottom", "2px solid #34F458");
-                            } else {
-                                $('#fname_error_message').html("Should contain only Characters");
-                                $('#fname_error_message').show();
-                                $("#form_fname").css("border-bottom", "2px solid #F70A0A");
-                                error_fname = true;
-                            }
-                        }
-    
-                        function check_lName(){
-                            var pattern = /^[a-zA-Z]*$/;
-                            var lname = $("#form_lname").val()
-                            if (pattern.test(lname) && lname!==''){
-                                $('#lname_error_message').hide();
-                                $("#form_lname").css("border-bottom", "2px solid #34F458");
-                            } else {
-                                $('#lname_error_message').html("Should contain only Characters");
-                                $('#lname_error_message').show();
-                                $("#form_lname").css("border-bottom", "2px solid #F70A0A");
-                                error_lname = true;
-                            }
-                        }
-    
-                        function check_email(){
-                            var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-                            var email = $("#form_email").val()
-                            if (pattern.test(email) && email!==''){
-                                $('#email_error_message').hide();
-                                $("#form_email").css("border-bottom", "2px solid #34F458");
-                            } else {
-                                $('#email_error_message').html("Invalid Email");
-                                $('#email_error_message').show();
-                                $("#form_email").css("border-bottom", "2px solid #F90A0A");
-                                error_email = true;
-                            }
-                        }
-    
-                        function check_rName(){
-                                var pattern = /^[a-zA-Z]*$/;
-                                var rname = $("#region_name").val()
-                                if (pattern.test(rname) && rname!==''){
-                                    $('#region_name_error_message').hide();
-                                    $("#region_name").css("border-bottom", "2px solid #34F458");
-                                } else {
-                                    $('#region_name_error_message').html("Should contain only Characters");
-                                    $('#region_name_error_message').show();
-                                    $("#region_name").css("border-bottom", "2px solid #F70A0A");
-                                    error_rname = true;
-                                }
-                            }
-    
-                        $("#add_employee_form").submit(function(){
-                            error_fname = false;
-                            error_lname = false;
-                            error_email = false;
-                            error_rname = false;
-    
-                            check_fName();
-                            check_lName();
-                            check_email();
-                            check_rName();
-    
-                            if(error_fname === false && error_lname === false && error_email === false && error_rname === false){
-                                alert("Registration Successfull");
-                                return true;
-                            }else{
-                                alert("Please Fill Form Correctly");
-                                return false;
-                            }
-                        });
-    
-                    });
-                </script>
-    
-                <script>
-                    document.getElementById("mybtn").addEventListener("click", function() {
->>>>>>> 6843abfa97f97d08fd0ac1a9d771932ccc1c812b:pages/add_employee.php
 
           $("#add_employee_form").submit(function () {
             error_fname = false;
@@ -633,42 +299,28 @@
         });
       </script>
 
-<<<<<<< HEAD:pages/add_employee.html
-      <script>
-        document.getElementById("mybtn").addEventListener("click", function () {
-          var mybox = document.getElementById("mydiv");
-          if (mybox.style.display == "none") {
-            mybox.style.display = "block";
-          } else {
-            mybox.style.display = "none";
-          }
-        });
-      </script>
-    </div>
-  </body>
-</html>
-=======
-                    })
-                </script>
-
-                <script type="text/javascript">
-                    function myfun(data)
-                    {
-                        var req = new XMLHttpRequest();
-                        req.open("GET","http://localhost/CRM/pages/response.php?datavalue="+data,true);
-                        req.send();
-
-                        req.onreadystatechange=function(){
-
-                            if(req.readyState==4 && req.status==200){
-                                document.getElementById('city').innerHTML = req.responseText;
-                            }
 
                         }
                     }
                 </script>
       
-        </div>      
+        </div>  
+        
+        <script type="text/javascript">
+            function myfun(data)
+            {
+                var req = new XMLHttpRequest();
+                req.open("GET","http://localhost/CRM/pages/response.php?datavalue="+data,true);
+                req.send();
+
+                req.onreadystatechange=function(){
+
+                    if(req.readyState==4 && req.status==200){
+                        document.getElementById('city').innerHTML = req.responseText;
+                    }
+
+                }
+            }
+        </script>
     </body>
 </html>
->>>>>>> 6843abfa97f97d08fd0ac1a9d771932ccc1c812b:pages/add_employee.php

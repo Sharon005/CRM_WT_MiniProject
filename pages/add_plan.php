@@ -1,3 +1,15 @@
+<?php include ('header.php'); ?>
+<?php
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+	$p_name = mysqli_real_escape_string($con,$_POST['p_name']);
+	$p_speed = mysqli_real_escape_string($con,$_POST['p_speed']);
+	$p_cost = mysqli_real_escape_string($con,$_POST['p_cost']);
+	$p_duration = mysqli_real_escape_string($con,$_POST['p_duration']);
+	$sql = mysqli_query($con,"INSERT INTO plan(p_name,p_speed,p_cost,p_duration)VALUES('$p_name','$p_speed','$p_cost','$p_duration')");
+	
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -98,7 +110,7 @@
                 <div class="col">
                     <h3>Create Plan</h3> <br>
                     <div class="form">
-                        <form id = "create_plan_form" method="POST">
+                        <form id = "create_plan_form" action="./add_plan.php" method="POST">
                             <div class="form-group">
                                 <label for="p_name">Plan Name</label>
                                 <input type="text" name="p_name" required="" placeholder="Enter Plan Name" class="form-control" id="form_plan_name">
@@ -163,24 +175,7 @@
 
                     });
                 </script>
-                <?php include ('../includes/app.php');?>
-                    <?php include('../includes/footer.php'); ?>
-<?php
-if($_SERVER["REQUEST_METHOD"]=="POST"){
-	$p_name = mysqli_real_escape_string($con,$_POST['p_name']);
-	$p_speed = mysqli_real_escape_string($con,$_POST['p_speed']);
-	$p_cost = mysqli_real_escape_string($con,$_POST['p_cost']);
-	$p_duration = mysqli_real_escape_string($con,$_POST['p_duration']);
-	$sql = mysqli_query($con,"INSERT INTO plan(p_name,p_speed,p_cost,p_duration)VALUES('$p_name','$p_speed','$p_cost','$p_duration')");
-	if($sql){
-		echo "<h2 style='margin:3% 0% 0% 15%;color:green;'>Plan Successfully Added...</h2>";
-	}else{
-		echo "Error: ".mysqli_error($con);
-		echo "<script type='text/javascript'>alert('Something Wrong');</script>";
-	}
-}
-
-?>
+                
             
     </body>
 </html>

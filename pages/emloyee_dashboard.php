@@ -30,61 +30,15 @@
             <div class="col">
             <div class="v-nav">
           <ul class="nav flex-column">
-          <li class="nav-item">
-              <div class="btn-group">
-                  <button id="b1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Plans
-                  </button>
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="add_plan.php">Add Plans</a></li>
-                      <li><a class="dropdown-item" href="plan_edit.php">Edit Plans</a></li>
-                      <li><a class="dropdown-item" href="plan_view.php">View Plans</a></li>
-                      <li><a class="dropdown-item" href="plan_delete.php">Delete Plans</a></li>
-                  </ul>
-              </div>
-          </li>
-          <br>
-
-          <li class="nav-item">
-              <div class="btn-group ">
-                  <button id="b1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Employees
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="add_employee.php">Add Employee</a></li>
-                      <li><a class="dropdown-item" href="viewemp.php">View Employee</a></li>
-                      <li><a class="dropdown-item" href="editemp.php">Edit Employee</a></li>
-                      <li><a class="dropdown-item" href="delete_emp.php">Delete Employee</a></li>
-                  </ul>
-              </div>
-          </li>
-          <br>
-
-          <li class="nav-item">
-              <div class="btn-group">
-                  <button id="b1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Customers
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="add_customer.php">Add Customers</a></li>
-                      <li><a class="dropdown-item" href="view_customer.php">View Customers</a></li>
-                      <li><a class="dropdown-item" href="edit_customer.php">Edit Customers</a></li>
-                      <li><a class="dropdown-item" href="delete_customer.php">Delete Customers</a></li>
-                  </ul>
-              </div>
-          </li>
-
-          <br>
+    
           <li class="nav-item">
               <div class="btn-group">
                   <button id="b1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     Complaints
                   </button>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="add_complaint.php">Add Complaints</a></li>
-                    <li><a class="dropdown-item" href="view_complaint.php">View Complaints</a></li>
-                    <li><a class="dropdown-item" href="solve_complaint.php">Solve Complaints</a></li>
+                    <li><a class="dropdown-item" href="view_comp_ep.php">View Complaints</a></li>
+                    <li><a class="dropdown-item" href="solve_comp_rp.php">Solve Complaints</a></li>
                   </ul>
               </div>
           </li>
@@ -105,10 +59,11 @@
                 </table>
             </div>
         </div>
-        <?php include ('../includes/app.php');?>
-        <?php include('../includes/footer.php'); ?>
 
+    </body>
+</html>
 
+<?php include ('header.php'); ?>
 <?php
 if($_SERVER["REQUEST_METHOD"]=="POST"){
 	$e_name = mysqli_real_escape_string($con,$_POST['e_name']);
@@ -125,5 +80,3 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 }
 
 ?>
-    </body>
-</html>
